@@ -11,7 +11,9 @@ This image is available on DockerHub. To pull the latest image (16.04), run:
 To build the base image for 16.04 from scratch, run:
 
 > git clone https://github.com/godleon/s2i-ubuntu-basictools.git
+
 > cd s2i-ubuntu-basictools/16.04
+
 > make build
 
 
@@ -20,4 +22,5 @@ To build the base image for 16.04 from scratch, run:
 This repository includes the S2I test framework, which launches a simple test to make sure the image builds and runs properly.
 
 > cd s2i-ubuntu-basictoolss/16.04
+
 > make test
