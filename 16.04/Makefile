@@ -7,4 +7,4 @@ build:
 .PHONY: test
 test:
 	docker build -t $(IMAGE_NAME) .
-	IMAGE_NAME=$(IMAGE_NAME) test/run.sh
+	IMAGE_NAME=$(IMAGE_NAME) test/run
