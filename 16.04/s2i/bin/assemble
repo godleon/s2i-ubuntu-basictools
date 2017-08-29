@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# S2I assemble script for the 'ubuntu-basetools' image.
+# S2I assemble script for the 'godleon/ubuntu-basetools:16.04' image.
 # The 'assemble' script builds your application source so that it is ready to run.
 #
 # For more information refer to the documentation:
@@ -8,7 +8,7 @@
 #
 
 if [[ "$1" == "-h" ]]; then
-	# If the 'ubuntu-basetools' assemble script is executed with '-h' flag,
+	# If the 'godleon/ubuntu-basetools:16.04' assemble script is executed with '-h' flag,
 	# print the usage.
 	exec ${STI_SCRIPTS_PATH}/usage
 fi

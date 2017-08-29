@@ -1,6 +1,6 @@
 #!/bin/bash -e
 #
-# S2I run script for the 'base-ubuntu16.04' image.
+# S2I run script for the 'godleon/ubuntu-basetools:16.04' image.
 # The run script executes the server that runs your application.
 #
 # For more information see the documentation:

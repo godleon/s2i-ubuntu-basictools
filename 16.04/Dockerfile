@@ -30,11 +30,14 @@ apt-get -yq update && \
 apt-get -yq install $INSTALL_PKGS && \
 apt-get clean
 
+# Copy the S2I scripts to /usr/libexec/s2i since we set the label that way
+COPY ./s2i/bin/ $STI_SCRIPTS_PATH
+
 # Copy executable utilities.
 COPY bin/ /usr/bin/
 
 # Copy the S2I scripts to /usr/libexec/s2i since we set the label that way
-COPY s2i/bin/ $STI_SCRIPTS_PATH
+#COPY s2i/bin/ $STI_SCRIPTS_PATH
 
 # Setup the 'openshift' user that is used for build execution and for the
 # application runtime execution.
@@ -47,4 +50,4 @@ WORKDIR ${HOME}
 USER 1001
 
 ENTRYPOINT ["container-entrypoint"]
-CMD ["$STI_SCRIPTS_PATH/usage"]
+CMD ["base-usage"]
