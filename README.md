@@ -5,24 +5,19 @@ This repository is used for creating OpenShift S2I(Source to Image) builder imag
 
 This image is available on DockerHub. To pull the latest image (16.04), run:
 
-```bash
-# Ubuntu 16.04
-docker pull godleon/s2i-ubuntu:16.04
-```
+> docker pull godleon/s2i-ubuntu-basictools:16.04
+
 
 To build the base image for 16.04 from scratch, run:
 
-```
-git clone https://github.com/godleon/s2i-ubuntu-basictools.git
-cd s2i-ubuntu-basictools/16.04
-make build
-```
+> git clone https://github.com/godleon/s2i-ubuntu-basictools.git
+> cd s2i-ubuntu-basictools/16.04
+> make build
+
 
 ## Test
 
 This repository includes the S2I test framework, which launches a simple test to make sure the image builds and runs properly.
 
-```
-cd s2i-ubuntu-basictoolss/16.04
-make test
-```
+> cd s2i-ubuntu-basictoolss/16.04
+> make test
